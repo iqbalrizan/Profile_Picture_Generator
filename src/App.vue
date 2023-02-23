@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div>
+    <h1>Profile Picture Generator</h1>
+    <show-avatar></show-avatar>
+  </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ShowAvatar from "./components/ShowAvatar.vue";
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ShowAvatar,
+  },
 }
 </script>
 
@@ -23,6 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  background-color: rgb(0, 199, 199);
 }
 </style>
